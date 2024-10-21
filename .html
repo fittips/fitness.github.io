@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #444;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#progress {
+    text-align: center;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Fitness Journey</h1>
+        <p>Join me as I improve my health and well-being step by step.</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm starting my fitness journey and would love to share my progress and tips with others who are also on their path to a healthier lifestyle.</p>
+    </section>
+
+    <section id="progress">
+        <h2>My Progress</h2>
+        <p>Track my progress and feel free to connect if you're interested in sharing tips!</p>
+        <button id="trackButton">Track My Progress</button>
+        <p id="progressDisplay"></p>
+    </section>
+
+    <footer>
+        <p>Created with love by [Your Name]</p>
+    </footer>
+
+    <script>
+        document.getElementById('trackButton').addEventListener('click', function() {
+    const progress = "Today I walked 5000 steps and did a 15-minute workout!";
+    document.getElementById('progressDisplay').innerText = progress;
+});
+
+    </script>
+</body>
+</html>
